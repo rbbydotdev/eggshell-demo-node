@@ -9,7 +9,7 @@ elette clones this repository into a new project and opens three panes:
 | Pane | What it runs |
 |---|---|
 | server | `npm install && npm run dev`: the server on port 3000, restarted by nodemon on each change |
-| opencode | `egg pkg install opencode && opencode`: the coding agent, in this project |
+| opencode | `vault run --optional -- opencode`: the coding agent, with your model keys from the vault when you have one |
 | preview | the page the server serves on port 3000 |
 
 Edit `public/index.html` or `server.js` in the editor or ask opencode to. nodemon restarts the server and the preview shows the change.
@@ -25,3 +25,5 @@ The panes are files in `.egg/autostart/`, one [XDG autostart](https://specificat
 Put the folder in any repository and open `https://elette.dev/?import_gh=OWNER/REPO`.
 
 The layout, files, opencode and preview side by side with the terminal below, is `.egg/config.json`: arrange the panes, then Views, Save layout writes it.
+
+The packages the panes use are pinned in `.egg/packages` (`egg pkg pack` writes it): the import installs them before any pane starts.
