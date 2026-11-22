@@ -23,3 +23,5 @@ The panes are files in `.egg/autostart/`, one [XDG autostart](https://specificat
 - A file pane: `X-Eggshell-File=PATH`.
 
 Put the folder in any repository and open `https://elette.dev/?import_gh=OWNER/REPO`.
+
+The layout, files, opencode and preview side by side with the terminal below, is `.egg/config.json`: arrange the panes, then Views, Save layout writes it.
